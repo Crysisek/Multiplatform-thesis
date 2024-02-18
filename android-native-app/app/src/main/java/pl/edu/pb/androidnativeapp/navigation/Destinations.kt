@@ -34,4 +34,4 @@ sealed class Destinations(val route: String) {
 }
 
 val Destinations.name: String
-    get() = route.substringBefore('/').substringBeforeLast('_').replace('_', ' ').uppercase()
+    get() = route.substringBeforeLast('_').replace('_', ' ').uppercase()
