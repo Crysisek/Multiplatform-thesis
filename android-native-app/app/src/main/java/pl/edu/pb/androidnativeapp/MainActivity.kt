@@ -4,12 +4,12 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.rememberNavController
+import pl.edu.pb.androidnativeapp.navigation.Destinations
+import pl.edu.pb.androidnativeapp.navigation.home.homeScreen
 import pl.edu.pb.androidnativeapp.ui.theme.AndroidnativeappTheme
 
 class MainActivity : ComponentActivity() {
@@ -17,27 +17,21 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             AndroidnativeappTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    Greeting("Android")
-                }
+                MainApp()
             }
         }
     }
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
+fun MainApp() {
+    val navController = rememberNavController()
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    AndroidnativeappTheme {
-        Greeting("Android")
+    NavHost(
+        navController = navController,
+        startDestination = Destinations.Home.route,
+        modifier = Modifier.fillMaxSize()
+    ) {
+        homeScreen(navigateTo = navController::navigate)
     }
 }
