@@ -6,11 +6,11 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
-import pl.edu.pb.androidnativeapp.navigation.Destinations
+import pl.edu.pb.androidnativeapp.navigation.Destination
 import pl.edu.pb.androidnativeapp.navigation.name
 
 @Composable
-fun ButtonList(destinations: List<Destinations>, navigateTo: (String) -> Unit) {
+fun ButtonList(destinations: List<Destination>, navigateTo: (String) -> Unit) {
     Column(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally,

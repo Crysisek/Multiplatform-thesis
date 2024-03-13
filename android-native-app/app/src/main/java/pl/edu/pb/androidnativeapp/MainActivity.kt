@@ -8,7 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
-import pl.edu.pb.androidnativeapp.navigation.Destinations
+import pl.edu.pb.androidnativeapp.navigation.Destination
 import pl.edu.pb.androidnativeapp.navigation.home.homeScreen
 import pl.edu.pb.androidnativeapp.ui.theme.AndroidnativeappTheme
 
@@ -29,7 +29,7 @@ fun MainApp() {
 
     NavHost(
         navController = navController,
-        startDestination = Destinations.Home.route,
+        startDestination = Destination.Home.route,
         modifier = Modifier.fillMaxSize()
     ) {
         homeScreen(navigateTo = navController::navigate)
