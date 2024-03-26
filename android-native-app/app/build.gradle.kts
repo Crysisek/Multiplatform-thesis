@@ -60,6 +60,8 @@ dependencies {
     implementation(libs.material3)
     implementation(libs.camera2)
     implementation(libs.camera.view)
+    implementation(libs.immutable.collections)
+    implementation(libs.gms.location.services)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.test.ext.junit)
     androidTestImplementation(libs.espresso.core)
