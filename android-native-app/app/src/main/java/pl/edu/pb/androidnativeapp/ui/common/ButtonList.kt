@@ -1,4 +1,4 @@
-package pl.edu.pb.androidnativeapp.ui
+package pl.edu.pb.androidnativeapp.ui.common
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
