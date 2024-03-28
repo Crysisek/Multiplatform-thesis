@@ -1,4 +1,4 @@
-package pl.edu.pb.androidnativeapp.ui
+package pl.edu.pb.androidnativeapp.ui.common
 
 import android.content.Context
 import android.content.pm.PackageManager

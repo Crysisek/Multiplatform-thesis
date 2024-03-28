@@ -8,7 +8,7 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
 import kotlinx.collections.immutable.persistentListOf
-import pl.edu.pb.androidnativeapp.ui.PermissionChecker
+import pl.edu.pb.androidnativeapp.ui.common.PermissionChecker
 
 @Composable
 fun CameraScreen() {
