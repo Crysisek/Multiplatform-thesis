@@ -7,6 +7,11 @@ import Hardware from "./src/pages/Hardware";
 import Database from "./src/pages/Database";
 import Animation from "./src/pages/Animation";
 import FileDecoding from "./src/pages/FileDecoding";
+import Accelerometer from "./src/pages/hardwarePages/Accelerometer";
+import Camera from "./src/pages/hardwarePages/Camera";
+import Gps from "./src/pages/hardwarePages/Gps";
+import Light from "./src/pages/hardwarePages/Light";
+import Microphone from "./src/pages/hardwarePages/Microphone";
 
 const Stack = createStackNavigator();
 
@@ -20,6 +25,11 @@ export default function App() {
         <Stack.Screen name="Database" component={Database}/>
         <Stack.Screen name="Animation" component={Animation}/>
         <Stack.Screen name="File decoding" component={FileDecoding}/>
+        <Stack.Screen name="Accelerometer" component={Accelerometer}/>
+        <Stack.Screen name="Camera" component={Camera}/>
+        <Stack.Screen name="Gps" component={Gps}/>
+        <Stack.Screen name="Light" component={Light}/>
+        <Stack.Screen name="Microphone" component={Microphone}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
