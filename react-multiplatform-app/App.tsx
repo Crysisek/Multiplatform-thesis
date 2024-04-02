@@ -11,7 +11,6 @@ import Accelerometer from "./src/pages/hardwarePages/Accelerometer";
 import Camera from "./src/pages/hardwarePages/Camera";
 import Gps from "./src/pages/hardwarePages/Gps";
 import Light from "./src/pages/hardwarePages/Light";
-import Microphone from "./src/pages/hardwarePages/Microphone";
 
 const Stack = createStackNavigator();
 
@@ -29,7 +28,6 @@ export default function App() {
         <Stack.Screen name="Camera" component={Camera}/>
         <Stack.Screen name="Gps" component={Gps}/>
         <Stack.Screen name="Light" component={Light}/>
-        <Stack.Screen name="Microphone" component={Microphone}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -7,7 +7,7 @@ const ButtonList = () => {
 
   const buttons = [
     { id: 1, title: 'Infinite list', routeName: 'Infinite list' },
-    { id: 2, title: 'Hardware', routeName: 'Hardware' },
+    { id: 2, title: 'Sensors', routeName: 'Hardware' },
     { id: 3, title: 'Database', routeName: 'Database' },
     { id: 4, title: 'Animation', routeName: 'Animation' },
     { id: 5, title: 'File decoding', routeName: 'File decoding' },

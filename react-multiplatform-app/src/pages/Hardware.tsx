@@ -10,7 +10,6 @@ const Hardware = () => {
     { id: 20, title: 'Camera', routeName: 'Camera' },
     { id: 30, title: 'Gps', routeName: 'Gps' },
     { id: 40, title: 'Light', routeName: 'Light' },
-    { id: 50, title: 'Microphone', routeName: 'Microphone' },
   ];
 
   const handleButtonPress = (routeName: string) => {

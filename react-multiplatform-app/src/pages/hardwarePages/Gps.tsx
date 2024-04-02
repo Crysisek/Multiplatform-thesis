@@ -4,7 +4,7 @@ import * as Location from 'expo-location';
 
 const Gps = () => {
 
-  const [location , setLocation] = useState<Location.LocationGeocodedAddress>()
+  const [location , setLocation] = useState<Location.LocationObject>()
 
   useEffect(() => {
     const getLocation = async () => {
@@ -16,8 +16,7 @@ const Gps = () => {
         }
 
         const location = await Location.getCurrentPositionAsync({});
-        const result = await Location.reverseGeocodeAsync(location.coords)
-        setLocation(result[0])
+        setLocation(location)
       } catch (error) {
         console.error("Error requesting location permission:", error);
       }
@@ -28,9 +27,8 @@ const Gps = () => {
 
 
   return <View style={styles.container}>
-    <Text>{location?.name}</Text>
-    <Text>{location?.city}</Text>
-    <Text>{location?.country}</Text>
+    <Text>{`longitude: ${location?.coords.longitude}`}</Text>
+    <Text>{`altitude: ${location?.coords.altitude}`}</Text>
   </View>
 }
 
