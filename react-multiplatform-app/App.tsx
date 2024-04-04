@@ -2,7 +2,6 @@ import { StyleSheet } from 'react-native';
 import {NavigationContainer} from "@react-navigation/native";
 import {createStackNavigator} from "@react-navigation/stack";
 import ButtonList from "./src/pages/ButtonList";
-import InfiniteList from "./src/pages/InfiniteList";
 import Hardware from "./src/pages/Hardware";
 import Database from "./src/pages/Database";
 import Animation from "./src/pages/Animation";
@@ -11,6 +10,9 @@ import Accelerometer from "./src/pages/hardwarePages/Accelerometer";
 import Camera from "./src/pages/hardwarePages/Camera";
 import Gps from "./src/pages/hardwarePages/Gps";
 import Light from "./src/pages/hardwarePages/Light";
+import InfiniteListButtons from "./src/pages/InfiniteListButtons";
+import InfiniteList from "./src/pages/infiniteList/InfiniteList";
+import InfiniteListLocal from "./src/pages/infiniteList/InfiniteLocal";
 
 const Stack = createStackNavigator();
 
@@ -19,7 +21,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="button-list">
         <Stack.Screen name="Button List" component={ButtonList}/>
-        <Stack.Screen name="Infinite list" component={InfiniteList}/>
+        <Stack.Screen name="InfiniteListButtons" component={InfiniteListButtons}/>
         <Stack.Screen name="Hardware" component={Hardware}/>
         <Stack.Screen name="Database" component={Database}/>
         <Stack.Screen name="Animation" component={Animation}/>
@@ -28,6 +30,8 @@ export default function App() {
         <Stack.Screen name="Camera" component={Camera}/>
         <Stack.Screen name="Gps" component={Gps}/>
         <Stack.Screen name="Light" component={Light}/>
+        <Stack.Screen name="InfiniteListLocal" component={InfiniteListLocal}/>
+        <Stack.Screen name="InfiniteListNetwork" component={InfiniteList}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
