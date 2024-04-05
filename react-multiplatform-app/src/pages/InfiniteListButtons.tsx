@@ -1,16 +1,13 @@
+import {Button, StyleSheet, View} from "react-native";
 import {useNavigation} from "@react-navigation/native";
 import React from "react";
-import {Button, StyleSheet, View} from "react-native";
 
-const ButtonList = () => {
+const InfiniteListButtons = () => {
   const navigation = useNavigation();
 
   const buttons = [
-    { id: 1, title: 'Infinite list', routeName: 'InfiniteListButtons' },
-    { id: 2, title: 'Sensors', routeName: 'Hardware' },
-    { id: 3, title: 'Database', routeName: 'Database' },
-    { id: 4, title: 'Animation', routeName: 'Animation' },
-    { id: 5, title: 'File decoding', routeName: 'File decoding' },
+    { id: 12, title: 'Local', routeName: 'InfiniteListLocal' },
+    { id: 11, title: 'Network', routeName: 'InfiniteListNetwork' },
   ];
 
   const handleButtonPress = (routeName: string) => {
@@ -28,7 +25,7 @@ const ButtonList = () => {
         ))}
       </View>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -38,4 +35,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ButtonList;
+export default InfiniteListButtons
