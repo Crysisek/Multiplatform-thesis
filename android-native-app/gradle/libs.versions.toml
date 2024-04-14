@@ -18,6 +18,8 @@ retrofit = "2.11.0"
 koin-bom = "3.5.3"
 moshi-kotlin = "1.15.1"
 coil = "2.6.0"
+room = "2.6.1"
+ksp = "1.9.21-1.0.15"
 
 [libraries]
 core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
@@ -47,8 +49,11 @@ moshi-kotlin = { group = "com.squareup.moshi", name = "moshi-kotlin", version.re
 koin-bom = { group = "io.insert-koin", name = "koin-bom", version.ref = "koin-bom" }
 koin-androidx-compose = { group = "io.insert-koin", name = "koin-androidx-compose" }
 coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil" }
+androidx-room-compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+androidx-room-runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+androidx-room-ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }

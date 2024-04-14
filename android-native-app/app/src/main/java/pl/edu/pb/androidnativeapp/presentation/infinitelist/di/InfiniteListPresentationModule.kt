@@ -7,7 +7,11 @@ import pl.edu.pb.androidnativeapp.presentation.infinitelist.viewmodel.InfiniteLi
 
 val infiniteListPresentationModule = module {
     factory { InfiniteListReducer() }
-    viewModel<InfiniteListViewModel> {
-        InfiniteListViewModel(get(), get())
+    viewModel<InfiniteListViewModel> { params ->
+        InfiniteListViewModel(
+            dataSourceType = params.get(),
+            reducer = get(),
+            infiniteListRepository = get()
+        )
     }
 }

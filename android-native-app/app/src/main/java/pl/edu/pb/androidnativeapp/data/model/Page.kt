@@ -1,4 +1,4 @@
-package pl.edu.pb.androidnativeapp.data.infinitelist.model
+package pl.edu.pb.androidnativeapp.data.model
 
 import com.squareup.moshi.Json
 

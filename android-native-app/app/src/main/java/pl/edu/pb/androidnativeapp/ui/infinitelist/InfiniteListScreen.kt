@@ -24,14 +24,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.loader.content.Loader
 import coil.compose.AsyncImage
 import org.koin.androidx.compose.koinViewModel
+import org.koin.core.parameter.parametersOf
 import pl.edu.pb.androidnativeapp.navigation.Destination
 import pl.edu.pb.androidnativeapp.presentation.DataSourceType
 import pl.edu.pb.androidnativeapp.presentation.infinitelist.model.InfiniteListState
 import pl.edu.pb.androidnativeapp.presentation.infinitelist.model.InfiniteListState.Content
 import pl.edu.pb.androidnativeapp.presentation.infinitelist.viewmodel.InfiniteListViewModel
+import pl.edu.pb.androidnativeapp.ui.Loader
 
 @Composable
 fun InfiniteListScreenRouter(navigateTo: (String) -> Unit) {
@@ -49,8 +50,10 @@ fun InfiniteListScreenRouter(navigateTo: (String) -> Unit) {
 
 @Composable
 fun InfiniteListScreen(
-    dataSourceType: DataSourceType, // TODO implement local infinite list
-    viewModel: InfiniteListViewModel = koinViewModel(),
+    dataSourceType: DataSourceType,
+    viewModel: InfiniteListViewModel = koinViewModel {
+        parametersOf(dataSourceType)
+    },
 ) {
     val state by viewModel.state.collectAsStateWithLifecycle(InfiniteListState.None)
 
@@ -99,13 +102,6 @@ fun InfiniteListContent(state: InfiniteListState) {
                 Loader()
             }
         }
-    }
-}
-
-@Composable
-fun Loader() {
-    Box(modifier = Modifier.fillMaxWidth()) {
-        CircularProgressIndicator(modifier = Modifier.align(Alignment.TopCenter))
     }
 }
 
