@@ -6,11 +6,13 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.launch
 import pl.edu.pb.androidnativeapp.data.infinitelist.repository.InfiniteListRepository
+import pl.edu.pb.androidnativeapp.presentation.DataSourceType
 import pl.edu.pb.androidnativeapp.presentation.infinitelist.model.InfiniteListState
 import pl.edu.pb.androidnativeapp.presentation.infinitelist.state.InfiniteListReducer
 import pl.edu.pb.androidnativeapp.presentation.infinitelist.state.model.InfiniteListAction
 
 class InfiniteListViewModel(
+    dataSourceType: DataSourceType,
     private val reducer: InfiniteListReducer,
     private val infiniteListRepository: InfiniteListRepository,
 ) : ViewModel() {
@@ -21,14 +23,21 @@ class InfiniteListViewModel(
 
     init {
         viewModelScope.launch(Dispatchers.IO) {
-            reducer.update(
+            val action = if (dataSourceType == DataSourceType.LOCAL) {
+                InfiniteListAction.SetContent(
+                    characters = infiniteListRepository.getAllCharacters(),
+                    loadMoreCharacters = {},
+                )
+            } else {
                 InfiniteListAction.SetContent(
                     characters = infiniteListRepository.getCharacters(FIRST_PAGE_URL)
                         .also { nextPageUrl = it.nextPageUrl }
                         .characters,
                     loadMoreCharacters = ::loadMoreCharacters,
                 )
-            )
+
+            }
+            reducer.update(action)
         }
     }
 
