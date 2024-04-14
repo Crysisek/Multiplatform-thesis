@@ -23,4 +23,24 @@ class InfiniteListRepositoryImpl(
             nextPageUrl = charactersPage.info.next,
         )
     }
+
+    override suspend fun getAllCharacters(): List<Character> {
+        var url: String? = "https://rickandmortyapi.com/api/character"
+        val allCharacters = mutableListOf<Character>()
+        do {
+            val charactersPage = infiniteListDataSource.getCharactersPage(url!!)
+            allCharacters += charactersPage.results.map {
+                Character(
+                    id = it.id,
+                    name = it.name,
+                    status = it.status,
+                    species = it.species,
+                    gender = it.gender,
+                    image = it.image,
+                )
+            }
+            url = charactersPage.info.next
+        } while (url != null)
+        return allCharacters
+    }
 }
