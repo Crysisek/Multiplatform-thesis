@@ -16,7 +16,7 @@ fun NavGraphBuilder.homeScreen(navigateTo: (String) -> Unit) {
     }
     infiniteListScreen(navigateTo = navigateTo)
     hardwareScreen(navigateTo = navigateTo)
-    databaseScreen(navigateTo = navigateTo)
+    databaseScreen()
     animationScreen()
     fileDecodingScreen()
 }

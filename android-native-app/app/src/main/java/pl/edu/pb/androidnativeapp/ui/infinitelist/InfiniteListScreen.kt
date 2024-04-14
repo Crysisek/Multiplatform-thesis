@@ -32,6 +32,7 @@ import pl.edu.pb.androidnativeapp.presentation.DataSourceType
 import pl.edu.pb.androidnativeapp.presentation.infinitelist.model.InfiniteListState
 import pl.edu.pb.androidnativeapp.presentation.infinitelist.model.InfiniteListState.Content
 import pl.edu.pb.androidnativeapp.presentation.infinitelist.viewmodel.InfiniteListViewModel
+import pl.edu.pb.androidnativeapp.ui.Loader
 
 @Composable
 fun InfiniteListScreenRouter(navigateTo: (String) -> Unit) {
@@ -101,13 +102,6 @@ fun InfiniteListContent(state: InfiniteListState) {
                 Loader()
             }
         }
-    }
-}
-
-@Composable
-fun Loader() {
-    Box(modifier = Modifier.fillMaxWidth()) {
-        CircularProgressIndicator(modifier = Modifier.align(Alignment.TopCenter))
     }
 }
 

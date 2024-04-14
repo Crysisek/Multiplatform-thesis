@@ -1,6 +1,6 @@
 package pl.edu.pb.androidnativeapp.data.infinitelist.remote
 
-import pl.edu.pb.androidnativeapp.data.infinitelist.model.Page
+import pl.edu.pb.androidnativeapp.data.model.Page
 
 interface InfiniteListDataSource {
 
