@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="19cdd59e-45be-40d4-b3e7-61ef91260452" name="Changes" comment="Api InfiniteList" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/android-native-app">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="android-native-app" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="multiplatform-react-native" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Kompanel&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Crysisek/Multiplatform-thesis.git&quot;,
+    &quot;accountId&quot;: &quot;529521ba-ffee-46d6-9acb-b88a2a13519e&quot;
+  }
+}</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2crOv712DyspqA9FncTsuSAfBzN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "React Native.react-native-android.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "native-ios",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/akalinowski/Praca Magisterska/Multiplatform-thesis/react-multiplatform-app/src/pages/infiniteList",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "ts.external.directory.path": "/Users/akalinowski/Praca Magisterska/Multiplatform-thesis/react-multiplatform-app/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "kotlin-gradle-user-dirs": [
+      "/Users/akalinowski/.gradle"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/react-multiplatform-app/src/pages/infiniteList" />
+      <recent name="$PROJECT_DIR$/react-multiplatform-app/src/config" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/react-multiplatform-app/src/pages/infiniteList" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="react-native-android" type="ReactNative" factoryName="React Native">
+      <node-interpreter value="project" />
+      <react-native value="$PROJECT_DIR$/multiplatformReactNative/node_modules/react-native" />
+      <platform value="ANDROID" />
+      <envs />
+      <only-packager />
+      <browser value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <method v="2">
+        <option name="ReactNativePackager" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="19cdd59e-45be-40d4-b3e7-61ef91260452" name="Changes" comment="" />
+      <created>1708866459621</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1708866459621</updated>
+      <workItem from="1708866461051" duration="3082000" />
+      <workItem from="1708877054404" duration="316000" />
+      <workItem from="1708877488210" duration="2185000" />
+      <workItem from="1710359633912" duration="1763000" />
+      <workItem from="1710393227175" duration="16000" />
+      <workItem from="1710421884083" duration="152000" />
+      <workItem from="1710424344237" duration="1427000" />
+      <workItem from="1710482216712" duration="12000" />
+      <workItem from="1710599257057" duration="1359000" />
+      <workItem from="1710690998696" duration="4000" />
+      <workItem from="1710782319927" duration="55000" />
+      <workItem from="1711210095023" duration="630000" />
+      <workItem from="1711553891862" duration="3085000" />
+      <workItem from="1711964275096" duration="3930000" />
+      <workItem from="1712065663696" duration="599000" />
+      <workItem from="1712232640627" duration="2528000" />
+      <workItem from="1712235336827" duration="455000" />
+      <workItem from="1712497489232" duration="3917000" />
+      <workItem from="1713120213398" duration="445000" />
+      <workItem from="1713289586272" duration="10000" />
+      <workItem from="1713289769921" duration="51000" />
+      <workItem from="1713289881438" duration="5000" />
+    </task>
+    <task id="LOCAL-00001" summary="removing .expo">
+      <option name="closed" value="true" />
+      <created>1711210125975</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711210125975</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Hardwares">
+      <option name="closed" value="true" />
+      <created>1711967935311</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711967935311</updated>
+    </task>
+    <task id="LOCAL-00003" summary="remove microphone, permission fix">
+      <option name="closed" value="true" />
+      <created>1712066070111</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712066070111</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Api InfiniteList">
+      <option name="closed" value="true" />
+      <created>1712235664073</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1712235664073</updated>
+    </task>
+    <task id="LOCAL-00005" summary="local infinite list">
+      <option name="closed" value="true" />
+      <created>1712497866638</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1712497866638</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Animation">
+      <option name="closed" value="true" />
+      <created>1712499120802</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1712499120802</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Database save">
+      <option name="closed" value="true" />
+      <created>1712509787337</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712509787337</updated>
+    </task>
+    <task id="LOCAL-00008" summary="files">
+      <option name="closed" value="true" />
+      <created>1713289811691</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713289811691</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="removing .expo" />
+    <MESSAGE value="Hardwares" />
+    <MESSAGE value="remove microphone, permission fix" />
+    <MESSAGE value="local infinite list" />
+    <MESSAGE value="Animation" />
+    <MESSAGE value="Database save" />
+    <MESSAGE value="Api InfiniteList" />
+    <MESSAGE value="files" />
+    <option name="LAST_COMMIT_MESSAGE" value="files" />
+  </component>
+</project>
