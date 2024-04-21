@@ -21,6 +21,8 @@
 		1E7BD9652BD50A370074FE64 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD9642BD50A370074FE64 /* CameraView.swift */; };
 		1E7BD9672BD50A440074FE64 /* AccelerometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD9662BD50A440074FE64 /* AccelerometerView.swift */; };
 		1E7BD9692BD50B040074FE64 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD9682BD50B040074FE64 /* AnimationView.swift */; };
+		1E7BD96B2BD5122E0074FE64 /* types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD96A2BD5122E0074FE64 /* types.swift */; };
+		1E7BD96D2BD512910074FE64 /* CharacterLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD96C2BD512910074FE64 /* CharacterLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		1E7BD9642BD50A370074FE64 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		1E7BD9662BD50A440074FE64 /* AccelerometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerView.swift; sourceTree = "<group>"; };
 		1E7BD9682BD50B040074FE64 /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		1E7BD96A2BD5122E0074FE64 /* types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = types.swift; sourceTree = "<group>"; };
+		1E7BD96C2BD512910074FE64 /* CharacterLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				1E7BD9522BD508A70074FE64 /* InfiniteListMenuView.swift */,
 				1E7BD9562BD508EE0074FE64 /* LocalInfiniteListView.swift */,
 				1E7BD9582BD509240074FE64 /* NetworkInfiniteListView.swift */,
+				1E7BD96A2BD5122E0074FE64 /* types.swift */,
+				1E7BD96C2BD512910074FE64 /* CharacterLoader.swift */,
 			);
 			path = infiniteList;
 			sourceTree = "<group>";
@@ -195,8 +201,10 @@
 				1E7BD95B2BD5097B0074FE64 /* DatabaseView.swift in Sources */,
 				1E7BD9632BD50A1D0074FE64 /* GpsView.swift in Sources */,
 				1E7BD9652BD50A370074FE64 /* CameraView.swift in Sources */,
+				1E7BD96D2BD512910074FE64 /* CharacterLoader.swift in Sources */,
 				1E7BD9532BD508A70074FE64 /* InfiniteListMenuView.swift in Sources */,
 				1E7BD9572BD508EE0074FE64 /* LocalInfiniteListView.swift in Sources */,
+				1E7BD96B2BD5122E0074FE64 /* types.swift in Sources */,
 				1E7BD9672BD50A440074FE64 /* AccelerometerView.swift in Sources */,
 				1E7BD95E2BD509EF0074FE64 /* HardwareMenuView.swift in Sources */,
 				1E7BD9612BD50A120074FE64 /* LightSensorView.swift in Sources */,
