@@ -11,6 +11,16 @@
 		1E7347A32BCEF126003CFEDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7347A22BCEF126003CFEDD /* ContentView.swift */; };
 		1E7347A52BCEF126003CFEDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E7347A42BCEF126003CFEDD /* Assets.xcassets */; };
 		1E7347A82BCEF126003CFEDD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E7347A72BCEF126003CFEDD /* Preview Assets.xcassets */; };
+		1E7BD9532BD508A70074FE64 /* InfiniteListMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD9522BD508A70074FE64 /* InfiniteListMenuView.swift */; };
+		1E7BD9572BD508EE0074FE64 /* LocalInfiniteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD9562BD508EE0074FE64 /* LocalInfiniteListView.swift */; };
+		1E7BD9592BD509240074FE64 /* NetworkInfiniteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD9582BD509240074FE64 /* NetworkInfiniteListView.swift */; };
+		1E7BD95B2BD5097B0074FE64 /* DatabaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD95A2BD5097B0074FE64 /* DatabaseView.swift */; };
+		1E7BD95E2BD509EF0074FE64 /* HardwareMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD95D2BD509EF0074FE64 /* HardwareMenuView.swift */; };
+		1E7BD9612BD50A120074FE64 /* LightSensorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD9602BD50A120074FE64 /* LightSensorView.swift */; };
+		1E7BD9632BD50A1D0074FE64 /* GpsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD9622BD50A1D0074FE64 /* GpsView.swift */; };
+		1E7BD9652BD50A370074FE64 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD9642BD50A370074FE64 /* CameraView.swift */; };
+		1E7BD9672BD50A440074FE64 /* AccelerometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD9662BD50A440074FE64 /* AccelerometerView.swift */; };
+		1E7BD9692BD50B040074FE64 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD9682BD50B040074FE64 /* AnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,16 @@
 		1E7347A22BCEF126003CFEDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1E7347A42BCEF126003CFEDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E7347A72BCEF126003CFEDD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E7BD9522BD508A70074FE64 /* InfiniteListMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfiniteListMenuView.swift; sourceTree = "<group>"; };
+		1E7BD9562BD508EE0074FE64 /* LocalInfiniteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalInfiniteListView.swift; sourceTree = "<group>"; };
+		1E7BD9582BD509240074FE64 /* NetworkInfiniteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInfiniteListView.swift; sourceTree = "<group>"; };
+		1E7BD95A2BD5097B0074FE64 /* DatabaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseView.swift; sourceTree = "<group>"; };
+		1E7BD95D2BD509EF0074FE64 /* HardwareMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareMenuView.swift; sourceTree = "<group>"; };
+		1E7BD9602BD50A120074FE64 /* LightSensorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightSensorView.swift; sourceTree = "<group>"; };
+		1E7BD9622BD50A1D0074FE64 /* GpsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpsView.swift; sourceTree = "<group>"; };
+		1E7BD9642BD50A370074FE64 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		1E7BD9662BD50A440074FE64 /* AccelerometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerView.swift; sourceTree = "<group>"; };
+		1E7BD9682BD50B040074FE64 /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +71,7 @@
 		1E73479F2BCEF126003CFEDD /* native-ios-app */ = {
 			isa = PBXGroup;
 			children = (
+				1E7BD9502BD5087C0074FE64 /* views */,
 				1E7347A02BCEF126003CFEDD /* native_ios_appApp.swift */,
 				1E7347A22BCEF126003CFEDD /* ContentView.swift */,
 				1E7347A42BCEF126003CFEDD /* Assets.xcassets */,
@@ -65,6 +86,39 @@
 				1E7347A72BCEF126003CFEDD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1E7BD9502BD5087C0074FE64 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				1E7BD95C2BD509BB0074FE64 /* hardware */,
+				1E7BD9512BD5088D0074FE64 /* infiniteList */,
+				1E7BD95A2BD5097B0074FE64 /* DatabaseView.swift */,
+				1E7BD9682BD50B040074FE64 /* AnimationView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		1E7BD9512BD5088D0074FE64 /* infiniteList */ = {
+			isa = PBXGroup;
+			children = (
+				1E7BD9522BD508A70074FE64 /* InfiniteListMenuView.swift */,
+				1E7BD9562BD508EE0074FE64 /* LocalInfiniteListView.swift */,
+				1E7BD9582BD509240074FE64 /* NetworkInfiniteListView.swift */,
+			);
+			path = infiniteList;
+			sourceTree = "<group>";
+		};
+		1E7BD95C2BD509BB0074FE64 /* hardware */ = {
+			isa = PBXGroup;
+			children = (
+				1E7BD95D2BD509EF0074FE64 /* HardwareMenuView.swift */,
+				1E7BD9602BD50A120074FE64 /* LightSensorView.swift */,
+				1E7BD9622BD50A1D0074FE64 /* GpsView.swift */,
+				1E7BD9642BD50A370074FE64 /* CameraView.swift */,
+				1E7BD9662BD50A440074FE64 /* AccelerometerView.swift */,
+			);
+			path = hardware;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +192,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E7347A32BCEF126003CFEDD /* ContentView.swift in Sources */,
+				1E7BD95B2BD5097B0074FE64 /* DatabaseView.swift in Sources */,
+				1E7BD9632BD50A1D0074FE64 /* GpsView.swift in Sources */,
+				1E7BD9652BD50A370074FE64 /* CameraView.swift in Sources */,
+				1E7BD9532BD508A70074FE64 /* InfiniteListMenuView.swift in Sources */,
+				1E7BD9572BD508EE0074FE64 /* LocalInfiniteListView.swift in Sources */,
+				1E7BD9672BD50A440074FE64 /* AccelerometerView.swift in Sources */,
+				1E7BD95E2BD509EF0074FE64 /* HardwareMenuView.swift in Sources */,
+				1E7BD9612BD50A120074FE64 /* LightSensorView.swift in Sources */,
+				1E7BD9692BD50B040074FE64 /* AnimationView.swift in Sources */,
+				1E7BD9592BD509240074FE64 /* NetworkInfiniteListView.swift in Sources */,
 				1E7347A12BCEF126003CFEDD /* native_ios_appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

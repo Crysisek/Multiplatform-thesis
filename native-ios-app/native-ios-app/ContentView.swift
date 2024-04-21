@@ -9,13 +9,22 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        NavigationView {
+            List {
+                NavigationLink(destination: InfiniteListMenuView()) {
+                    Button("InfiniteList") {}
+                }
+                NavigationLink(destination: HardwareMenuView()) {
+                    Button("Sensors") {}
+                }
+                NavigationLink(destination: DatabaseView()) {
+                    Button("Database") {}
+                }
+                NavigationLink(destination: AnimationView()){
+                    Button("Animation") {}
+                }
+            }
+        }.navigationTitle("Ios test")
     }
 }
 
