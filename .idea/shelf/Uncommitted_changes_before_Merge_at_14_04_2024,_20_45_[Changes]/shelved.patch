@@ -1,0 +1,629 @@
+Index: react-multiplatform-app/.expo/metro/externals/trace_events/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/trace_events/index.js b/react-multiplatform-app/.expo/metro/externals/trace_events/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/trace_events/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:trace_events');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/module/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/module/index.js b/react-multiplatform-app/.expo/metro/externals/module/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/module/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:module');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/net/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/net/index.js b/react-multiplatform-app/.expo/metro/externals/net/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/net/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:net');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/tls/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/tls/index.js b/react-multiplatform-app/.expo/metro/externals/tls/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/tls/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:tls');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/assert/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/assert/index.js b/react-multiplatform-app/.expo/metro/externals/assert/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/assert/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:assert');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/fs/promises/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/fs/promises/index.js b/react-multiplatform-app/.expo/metro/externals/fs/promises/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/fs/promises/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:fs/promises');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/string_decoder/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/string_decoder/index.js b/react-multiplatform-app/.expo/metro/externals/string_decoder/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/string_decoder/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:string_decoder');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/polyfill.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/polyfill.js b/react-multiplatform-app/.expo/metro/polyfill.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/polyfill.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-global.$$require_external = typeof window === "undefined" ? require : () => null;
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/shims/react-native-web/dist/exports/AppRegistry/AppContainer.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/shims/react-native-web/dist/exports/AppRegistry/AppContainer.js b/react-multiplatform-app/.expo/metro/shims/react-native-web/dist/exports/AppRegistry/AppContainer.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/shims/react-native-web/dist/exports/AppRegistry/AppContainer.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,12 +0,0 @@
+-// NOTE(EvanBacon): `react-native-web` adds a extra `div`s around the root HTML, these
+-// make static rendering much harder as we expect the root element to be `<html>`.
+-// This resolution will alias to a simple in-out component to avoid the extra HTML.
+-function AppContainer({ children }) {
+-  return children;
+-}
+-
+-if (process.env.NODE_ENV !== 'production') {
+-  AppContainer.displayName = 'AppContainer';
+-}
+-
+-export default AppContainer;
+Index: react-multiplatform-app/.expo/metro/externals/path/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/path/index.js b/react-multiplatform-app/.expo/metro/externals/path/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/path/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:path');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/crypto/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/crypto/index.js b/react-multiplatform-app/.expo/metro/externals/crypto/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/crypto/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:crypto');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/console/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/console/index.js b/react-multiplatform-app/.expo/metro/externals/console/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/console/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:console');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/perf_hooks/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/perf_hooks/index.js b/react-multiplatform-app/.expo/metro/externals/perf_hooks/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/perf_hooks/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:perf_hooks');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/dns/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/dns/index.js b/react-multiplatform-app/.expo/metro/externals/dns/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/dns/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:dns');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/http/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/http/index.js b/react-multiplatform-app/.expo/metro/externals/http/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/http/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:http');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/url/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/url/index.js b/react-multiplatform-app/.expo/metro/externals/url/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/url/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:url');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/README.md b/react-multiplatform-app/.expo/README.md
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/README.md	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,8 +0,0 @@
+-> Why do I have a folder named ".expo" in my project?
+-The ".expo" folder is created when an Expo project is started using "expo start" command.
+-> What do the files contain?
+-- "devices.json": contains information about devices that have recently opened this project. This is used to populate the "Development sessions" list in your development builds.
+-- "settings.json": contains the server configuration that is used to serve the application manifest.
+-> Should I commit the ".expo" folder?
+-No, you should not share the ".expo" folder. It does not contain any information that is relevant for other developers working on the project, it is specific to your machine.
+-Upon project creation, the ".expo" folder is already added to your ".gitignore" file.
+Index: react-multiplatform-app/.expo/metro/externals/zlib/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/zlib/index.js b/react-multiplatform-app/.expo/metro/externals/zlib/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/zlib/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:zlib');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/devices.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/devices.json b/react-multiplatform-app/.expo/devices.json
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/devices.json	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,3 +0,0 @@
+-{
+-  "devices": []
+-}
+Index: react-multiplatform-app/.expo/metro/shims/react-native-web/dist/cjs/exports/AppRegistry/AppContainer.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/shims/react-native-web/dist/cjs/exports/AppRegistry/AppContainer.js b/react-multiplatform-app/.expo/metro/shims/react-native-web/dist/cjs/exports/AppRegistry/AppContainer.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/shims/react-native-web/dist/cjs/exports/AppRegistry/AppContainer.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,13 +0,0 @@
+-// NOTE(EvanBacon): `react-native-web` adds a extra `div`s around the root HTML, these
+-// make static rendering much harder as we expect the root element to be `<html>`.
+-// This resolution will alias to a simple in-out component to avoid the extra HTML.
+-function AppContainer({ children }) {
+-  return children;
+-}
+-
+-if (process.env.NODE_ENV !== 'production') {
+-  AppContainer.displayName = 'AppContainer';
+-}
+-
+-module.exports = AppContainer;
+-module.exports.default = AppContainer;
+Index: react-multiplatform-app/.expo/metro/shims/react-native-web/dist/exports/BackHandler/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/shims/react-native-web/dist/exports/BackHandler/index.js b/react-multiplatform-app/.expo/metro/shims/react-native-web/dist/exports/BackHandler/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/shims/react-native-web/dist/exports/BackHandler/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,7 +0,0 @@
+-function emptyFunction() {}
+-var BackHandler = {
+-  exitApp: emptyFunction,
+-  addEventListener: () => ({ remove: emptyFunction }),
+-  removeEventListener: emptyFunction,
+-};
+-export default BackHandler;
+Index: react-multiplatform-app/.expo/metro/externals/vm/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/vm/index.js b/react-multiplatform-app/.expo/metro/externals/vm/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/vm/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:vm');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/diagnostics_channel/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/diagnostics_channel/index.js b/react-multiplatform-app/.expo/metro/externals/diagnostics_channel/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/diagnostics_channel/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:diagnostics_channel');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/cluster/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/cluster/index.js b/react-multiplatform-app/.expo/metro/externals/cluster/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/cluster/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:cluster');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/shims/react-native-web/dist/cjs/exports/BackHandler/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/shims/react-native-web/dist/cjs/exports/BackHandler/index.js b/react-multiplatform-app/.expo/metro/shims/react-native-web/dist/cjs/exports/BackHandler/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/shims/react-native-web/dist/cjs/exports/BackHandler/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,10 +0,0 @@
+-'use strict';
+-function emptyFunction() {}
+-(exports.__esModule = !0), (exports.default = void 0);
+-var BackHandler = {
+-    exitApp: emptyFunction,
+-    addEventListener: () => ({ remove: emptyFunction }),
+-    removeEventListener: emptyFunction,
+-  },
+-  _default = BackHandler;
+-(exports.default = _default), (module.exports = exports.default);
+Index: react-multiplatform-app/.expo/metro/externals/querystring/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/querystring/index.js b/react-multiplatform-app/.expo/metro/externals/querystring/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/querystring/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:querystring');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/constants/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/constants/index.js b/react-multiplatform-app/.expo/metro/externals/constants/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/constants/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:constants');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/punycode/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/punycode/index.js b/react-multiplatform-app/.expo/metro/externals/punycode/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/punycode/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:punycode');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/readline/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/readline/index.js b/react-multiplatform-app/.expo/metro/externals/readline/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/readline/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:readline');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/os/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/os/index.js b/react-multiplatform-app/.expo/metro/externals/os/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/os/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:os');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/buffer/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/buffer/index.js b/react-multiplatform-app/.expo/metro/externals/buffer/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/buffer/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:buffer');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/events/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/events/index.js b/react-multiplatform-app/.expo/metro/externals/events/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/events/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:events');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/inspector/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/inspector/index.js b/react-multiplatform-app/.expo/metro/externals/inspector/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/inspector/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:inspector');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/stream/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/stream/index.js b/react-multiplatform-app/.expo/metro/externals/stream/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/stream/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:stream');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/child_process/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/child_process/index.js b/react-multiplatform-app/.expo/metro/externals/child_process/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/child_process/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:child_process');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/domain/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/domain/index.js b/react-multiplatform-app/.expo/metro/externals/domain/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/domain/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:domain');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/v8/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/v8/index.js b/react-multiplatform-app/.expo/metro/externals/v8/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/v8/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:v8');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/util/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/util/index.js b/react-multiplatform-app/.expo/metro/externals/util/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/util/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:util');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/http2/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/http2/index.js b/react-multiplatform-app/.expo/metro/externals/http2/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/http2/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:http2');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/worker_threads/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/worker_threads/index.js b/react-multiplatform-app/.expo/metro/externals/worker_threads/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/worker_threads/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:worker_threads');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/tty/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/tty/index.js b/react-multiplatform-app/.expo/metro/externals/tty/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/tty/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:tty');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/dgram/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/dgram/index.js b/react-multiplatform-app/.expo/metro/externals/dgram/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/dgram/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:dgram');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/https/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/https/index.js b/react-multiplatform-app/.expo/metro/externals/https/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/https/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:https');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/fs/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/fs/index.js b/react-multiplatform-app/.expo/metro/externals/fs/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/fs/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:fs');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/process/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/process/index.js b/react-multiplatform-app/.expo/metro/externals/process/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/process/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:process');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/repl/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/repl/index.js b/react-multiplatform-app/.expo/metro/externals/repl/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/repl/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:repl');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/polyfill.native.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/polyfill.native.js b/react-multiplatform-app/.expo/metro/polyfill.native.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/polyfill.native.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-global.$$require_external = (moduleId) => {throw new Error(`Node.js standard library module ${moduleId} is not available in this JavaScript environment`);}
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/timers/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/timers/index.js b/react-multiplatform-app/.expo/metro/externals/timers/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/timers/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:timers');
+\ No newline at end of file
+Index: react-multiplatform-app/.expo/metro/externals/async_hooks/index.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/react-multiplatform-app/.expo/metro/externals/async_hooks/index.js b/react-multiplatform-app/.expo/metro/externals/async_hooks/index.js
+deleted file mode 100644
+--- a/react-multiplatform-app/.expo/metro/externals/async_hooks/index.js	(revision 5243164041225123b034021d9d335a52f65f89ef)
++++ /dev/null	(revision 5243164041225123b034021d9d335a52f65f89ef)
+@@ -1,1 +0,0 @@
+-module.exports = $$require_external('node:async_hooks');
+\ No newline at end of file
