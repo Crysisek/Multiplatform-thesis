@@ -8,9 +8,25 @@
 import SwiftUI
 
 struct LightSensorView: View {
-    var body: some View {
-        Text("Light sensor")
-    }
+        @State private var lightLevel: Float = 0.0
+        
+        var body: some View {
+            VStack {
+                Text("Light level:")
+                    .font(.title)
+                    .padding()
+                Text("\(lightLevel)")
+                    .font(.title)
+                    .padding()
+            }
+            .onAppear {
+                self.getLightLevel()
+            }
+        }
+        
+        func getLightLevel() {
+            self.lightLevel = Float(UIScreen.main.brightness)
+        }
 }
 
 #Preview {
