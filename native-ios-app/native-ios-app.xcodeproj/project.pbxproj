@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E6206B92BDD45D200D33D82 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6206B82BDD45D200D33D82 /* CameraView.swift */; };
 		1E7347A12BCEF126003CFEDD /* native_ios_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7347A02BCEF126003CFEDD /* native_ios_appApp.swift */; };
 		1E7347A32BCEF126003CFEDD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7347A22BCEF126003CFEDD /* ContentView.swift */; };
 		1E7347A52BCEF126003CFEDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E7347A42BCEF126003CFEDD /* Assets.xcassets */; };
@@ -18,7 +19,6 @@
 		1E7BD95E2BD509EF0074FE64 /* HardwareMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD95D2BD509EF0074FE64 /* HardwareMenuView.swift */; };
 		1E7BD9612BD50A120074FE64 /* LightSensorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD9602BD50A120074FE64 /* LightSensorView.swift */; };
 		1E7BD9632BD50A1D0074FE64 /* GpsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD9622BD50A1D0074FE64 /* GpsView.swift */; };
-		1E7BD9652BD50A370074FE64 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD9642BD50A370074FE64 /* CameraView.swift */; };
 		1E7BD9672BD50A440074FE64 /* AccelerometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD9662BD50A440074FE64 /* AccelerometerView.swift */; };
 		1E7BD9692BD50B040074FE64 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD9682BD50B040074FE64 /* AnimationView.swift */; };
 		1E7BD96B2BD5122E0074FE64 /* types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7BD96A2BD5122E0074FE64 /* types.swift */; };
@@ -26,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E6206B82BDD45D200D33D82 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		1E73479D2BCEF126003CFEDD /* native-ios-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "native-ios-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E7347A02BCEF126003CFEDD /* native_ios_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = native_ios_appApp.swift; sourceTree = "<group>"; };
 		1E7347A22BCEF126003CFEDD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,7 +39,6 @@
 		1E7BD95D2BD509EF0074FE64 /* HardwareMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareMenuView.swift; sourceTree = "<group>"; };
 		1E7BD9602BD50A120074FE64 /* LightSensorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightSensorView.swift; sourceTree = "<group>"; };
 		1E7BD9622BD50A1D0074FE64 /* GpsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpsView.swift; sourceTree = "<group>"; };
-		1E7BD9642BD50A370074FE64 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		1E7BD9662BD50A440074FE64 /* AccelerometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerView.swift; sourceTree = "<group>"; };
 		1E7BD9682BD50B040074FE64 /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
 		1E7BD96A2BD5122E0074FE64 /* types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = types.swift; sourceTree = "<group>"; };
@@ -121,8 +121,8 @@
 				1E7BD95D2BD509EF0074FE64 /* HardwareMenuView.swift */,
 				1E7BD9602BD50A120074FE64 /* LightSensorView.swift */,
 				1E7BD9622BD50A1D0074FE64 /* GpsView.swift */,
-				1E7BD9642BD50A370074FE64 /* CameraView.swift */,
 				1E7BD9662BD50A440074FE64 /* AccelerometerView.swift */,
+				1E6206B82BDD45D200D33D82 /* CameraView.swift */,
 			);
 			path = hardware;
 			sourceTree = "<group>";
@@ -198,9 +198,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E7347A32BCEF126003CFEDD /* ContentView.swift in Sources */,
+				1E6206B92BDD45D200D33D82 /* CameraView.swift in Sources */,
 				1E7BD95B2BD5097B0074FE64 /* DatabaseView.swift in Sources */,
 				1E7BD9632BD50A1D0074FE64 /* GpsView.swift in Sources */,
-				1E7BD9652BD50A370074FE64 /* CameraView.swift in Sources */,
 				1E7BD96D2BD512910074FE64 /* CharacterLoader.swift in Sources */,
 				1E7BD9532BD508A70074FE64 /* InfiniteListMenuView.swift in Sources */,
 				1E7BD9572BD508EE0074FE64 /* LocalInfiniteListView.swift in Sources */,
@@ -341,16 +341,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"native-ios-app/Preview Content\"";
+				DEVELOPMENT_TEAM = L2AZ58X77V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Canera is used for capturing photo";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Requires location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -358,6 +363,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alex.native-ios-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -369,16 +375,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"native-ios-app/Preview Content\"";
+				DEVELOPMENT_TEAM = L2AZ58X77V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Canera is used for capturing photo";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Requires location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -386,6 +397,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alex.native-ios-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
