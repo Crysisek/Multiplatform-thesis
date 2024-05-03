@@ -19,13 +19,13 @@ struct DatabaseView: View {
             Button("FetchData") {
                 loadCharacters()
             }
-            .disabled(isLoading)
+            .disabled(isLoading || characterLoader.fetching)
             Spacer()
             Button("Load from db") {
                 loadFromDB()
-            }.disabled(isLoading)
+            }.disabled(isLoading || characterLoader.fetching)
             Spacer()
-            if (isLoading) {
+            if (isLoading || characterLoader.fetching) {
                 Text("Loading")
             }
             Spacer()
@@ -65,47 +65,55 @@ struct DatabaseView: View {
                 }
                 .padding()
             }
+        }.onAppear{loadFromNetwork()}
+    }
+    
+    func loadFromNetwork() {
+        for _ in 0..<10 {
+            characterLoader.loadCharacters()
         }
     }
     
     func loadCharacters() {
-        isLoading = true
-        for _ in 0..<10 {
-            characterLoader.loadCharacters()
-        }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
-            var tempChar: [RMCharacter] = characterLoader.characters
-            tempChar.forEach { character in
-                var toSave: Character = Character(context:viewContext)
-                toSave.id = Int32(character.id)
-                toSave.gender = character.gender.rawValue
-                toSave.image = character.image
-                toSave.name = character.name
-                toSave.status = character.status.rawValue
-                toSave.type = character.type
-                
-                do {
-                    try viewContext.save()
-                    print("Character with id \(toSave.id) saved")
-                } catch {
-                    print ("Ops, error saving character with id: \(toSave.id)")
+        self.isLoading = true
+        DispatchQueue.global().async {
+            let tempChar: [RMCharacter] = characterLoader.characters
+                tempChar.forEach { character in
+                    let toSave: Character = Character(context:viewContext)
+                    toSave.id = Int32(character.id)
+                    toSave.gender = character.gender.rawValue
+                    toSave.image = character.image
+                    toSave.name = character.name
+                    toSave.status = character.status.rawValue
+                    toSave.type = character.type
+                    
+                    do {
+                        try viewContext.save()
+                        print("Character with id \(toSave.id) saved")
+                    } catch {
+                        print ("Ops, error saving character with id: \(toSave.id)")
+                    }
+                    
                 }
-                
-            }
-            
-            isLoading = false
         }
+            
+        DispatchQueue.main.async {
+            self.isLoading = false
+        }
+
     }
     
     func loadFromDB() {
-        isLoading = true
-        do {
-            characters = try viewContext.fetch(Character.fetchRequest())
-        } catch{
-            print("Error loading from DB")
+        self.isLoading = true
+        DispatchQueue.global().async {
+            do {
+                characters = try viewContext.fetch(Character.fetchRequest())
+            } catch{
+                print("Error loading from DB")
+            }}
+        DispatchQueue.main.async {
+            self.isLoading = false
         }
-        isLoading = false
     }
 }
 
