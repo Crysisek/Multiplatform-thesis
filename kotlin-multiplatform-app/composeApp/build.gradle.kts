@@ -4,6 +4,8 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsCompose)
+    alias(libs.plugins.kotlinxSerialization)
+    alias(libs.plugins.sqldelight)
 }
 
 kotlin {
@@ -22,7 +24,7 @@ kotlin {
     ).forEach { iosTarget ->
         iosTarget.binaries.framework {
             baseName = "ComposeApp"
-            isStatic = true
+            isStatic = false
         }
     }
     
@@ -31,14 +33,45 @@ kotlin {
         androidMain.dependencies {
             implementation(libs.compose.ui.tooling.preview)
             implementation(libs.androidx.activity.compose)
+            implementation(libs.ktor.client.android)
+            implementation(libs.koin.androidx.compose)
+            implementation(libs.sqldelight.android.driver)
+            implementation(libs.coil3.network.okhttp)
+            implementation(libs.camera2)
+            implementation(libs.camera.view)
+            implementation(libs.gms.location.services)
+            implementation(libs.compose.sensors)
+        }
+        iosMain.dependencies {
+            implementation(libs.ktor.client.darwin)
+            implementation(libs.sqldelight.native.driver)
+            implementation(libs.coil3.network.ktor)
         }
         commonMain.dependencies {
+            implementation(project.dependencies.platform(libs.koin.bom))
+            implementation(libs.koin.core)
+            implementation(libs.koin.compose)
+            implementation(libs.coil3)
             implementation(compose.runtime)
             implementation(compose.foundation)
-            implementation(compose.material)
+            implementation(compose.material3)
             implementation(compose.ui)
+            implementation(libs.navigation.compose)
+            implementation(libs.immutable.collections)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
+            implementation(libs.ktor.client.core)
+            implementation(libs.ktor.client.content.negotiation)
+            implementation(libs.ktor.serialization.kotlinx.json)
+            implementation(libs.sqldelight.runtime)
+        }
+    }
+}
+
+sqldelight {
+    databases {
+        create("InnerCharacterDatabase") {
+            packageName.set("pl.edu.pb.kotlinmultiplatformapp.data.database")
         }
     }
 }
@@ -76,4 +109,3 @@ android {
         debugImplementation(libs.compose.ui.tooling)
     }
 }
-
