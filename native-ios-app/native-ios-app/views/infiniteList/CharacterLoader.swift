@@ -10,8 +10,10 @@ import Foundation
 class CharacterLoader: ObservableObject {
     @Published var characters: [RMCharacter] = []
     private var nextPageURL: String?
+    @Published var fetching: Bool = false
     
     func loadCharacters() {
+        self.fetching = true
         guard let url = URL(string: nextPageURL ?? "https://rickandmortyapi.com/api/character/") else { return }
         
         URLSession.shared.dataTask(with: url) { data, response, error in
@@ -21,6 +23,7 @@ class CharacterLoader: ObservableObject {
                 DispatchQueue.main.async {
                     self.characters += decodedResponse.results
                     self.nextPageURL = decodedResponse.info.next
+                    self.fetching = false
                 }
             }
         }.resume()
