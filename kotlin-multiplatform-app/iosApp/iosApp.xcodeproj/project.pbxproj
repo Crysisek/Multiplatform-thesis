@@ -11,6 +11,12 @@
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+		A79E15A82BF4D7920014FF8A /* UIViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79E15A72BF4D7920014FF8A /* UIViewControllerFactory.swift */; };
+		A79E15AE2BF4E5960014FF8A /* GpsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79E15AC2BF4E5960014FF8A /* GpsView.swift */; };
+		A79E15AF2BF4E5960014FF8A /* AccelerometerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79E15AB2BF4E5960014FF8A /* AccelerometerView.swift */; };
+		A79E15B02BF4E5960014FF8A /* HardwareMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79E15A92BF4E5960014FF8A /* HardwareMenuView.swift */; };
+		A79E15B12BF4E5960014FF8A /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79E15AD2BF4E5960014FF8A /* CameraView.swift */; };
+		A79E15B22BF4E5960014FF8A /* LightSensorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79E15AA2BF4E5960014FF8A /* LightSensorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		7555FF7B242A565900829871 /* iosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = iosApp.app; path = "kotlin-multiplatform-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A79E15A72BF4D7920014FF8A /* UIViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerFactory.swift; sourceTree = "<group>"; };
+		A79E15A92BF4E5960014FF8A /* HardwareMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HardwareMenuView.swift; sourceTree = "<group>"; };
+		A79E15AA2BF4E5960014FF8A /* LightSensorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightSensorView.swift; sourceTree = "<group>"; };
+		A79E15AB2BF4E5960014FF8A /* AccelerometerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerView.swift; sourceTree = "<group>"; };
+		A79E15AC2BF4E5960014FF8A /* GpsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpsView.swift; sourceTree = "<group>"; };
+		A79E15AD2BF4E5960014FF8A /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		AB3632DC29227652001CCB65 /* Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,13 +82,35 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				A79E15B32BF4E5AB0014FF8A /* views */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
 				7555FF82242A565900829871 /* ContentView.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
 				058557D7273AAEEB004C7B11 /* Preview Content */,
+				A79E15A72BF4D7920014FF8A /* UIViewControllerFactory.swift */,
 			);
 			path = iosApp;
+			sourceTree = "<group>";
+		};
+		A79E15B32BF4E5AB0014FF8A /* views */ = {
+			isa = PBXGroup;
+			children = (
+				A79E15B42BF4E5B30014FF8A /* hardware */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		A79E15B42BF4E5B30014FF8A /* hardware */ = {
+			isa = PBXGroup;
+			children = (
+				A79E15AB2BF4E5960014FF8A /* AccelerometerView.swift */,
+				A79E15AD2BF4E5960014FF8A /* CameraView.swift */,
+				A79E15AC2BF4E5960014FF8A /* GpsView.swift */,
+				A79E15A92BF4E5960014FF8A /* HardwareMenuView.swift */,
+				A79E15AA2BF4E5960014FF8A /* LightSensorView.swift */,
+			);
+			path = hardware;
 			sourceTree = "<group>";
 		};
 		AB1DB47929225F7C00F7AF9C /* Configuration */ = {
@@ -183,8 +217,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A79E15A82BF4D7920014FF8A /* UIViewControllerFactory.swift in Sources */,
+				A79E15B12BF4E5960014FF8A /* CameraView.swift in Sources */,
+				A79E15B02BF4E5960014FF8A /* HardwareMenuView.swift in Sources */,
+				A79E15AE2BF4E5960014FF8A /* GpsView.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				A79E15B22BF4E5960014FF8A /* LightSensorView.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				A79E15AF2BF4E5960014FF8A /* AccelerometerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

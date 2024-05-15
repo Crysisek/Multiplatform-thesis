@@ -1,36 +1,34 @@
-import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.foundation.Image
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.material.Button
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Text
-import androidx.compose.runtime.*
-import androidx.compose.ui.Alignment
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Scaffold
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import org.jetbrains.compose.resources.ExperimentalResourceApi
-import org.jetbrains.compose.resources.painterResource
-import org.jetbrains.compose.ui.tooling.preview.Preview
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.rememberNavController
+import pl.edu.pb.kotlinmultiplatformapp.navigation.Destination
+import pl.edu.pb.kotlinmultiplatformapp.navigation.home.homeScreen
+import pl.edu.pb.kotlinmultiplatformapp.ui.TopBar
+import pl.edu.pb.kotlinmultiplatformapp.ui.theme.KotlinmultiplatformappTheme
 
-import kotlin_multiplatform_app.composeapp.generated.resources.Res
-import kotlin_multiplatform_app.composeapp.generated.resources.compose_multiplatform
-
-@OptIn(ExperimentalResourceApi::class)
 @Composable
-@Preview
 fun App() {
-    MaterialTheme {
-        var showContent by remember { mutableStateOf(false) }
-        Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
-            Button(onClick = { showContent = !showContent }) {
-                Text("Click me!")
+    KotlinmultiplatformappTheme {
+        val navController = rememberNavController()
+        val navigateUp = {
+            if (navController.currentBackStackEntry?.destination?.route != Destination.Home.route) {
+                navController.navigateUp()
             }
-            AnimatedVisibility(showContent) {
-                val greeting = remember { Greeting().greet() }
-                Column(Modifier.fillMaxWidth(), horizontalAlignment = Alignment.CenterHorizontally) {
-                    Image(painterResource(Res.drawable.compose_multiplatform), null)
-                    Text("Compose: $greeting")
-                }
+        }
+
+        Scaffold(
+            topBar = { TopBar(navigateUp) }, // Just for iOS app
+        ) {
+            NavHost(
+                navController = navController,
+                startDestination = Destination.Home.route,
+                modifier = Modifier.fillMaxSize().padding(it)
+            ) {
+                homeScreen(navigateTo = navController::navigate)
             }
         }
     }
