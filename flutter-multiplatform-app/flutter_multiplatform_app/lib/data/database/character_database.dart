@@ -30,11 +30,3 @@ class CharacterDatabase {
     await _db?.close();
   }
 }
-//CREATE TABLE CharacterEntity(
-//     id TEXT NOT NULL PRIMARY KEY,
-//     name TEXT NOT NULL,
-//     status TEXT NOT NULL,
-//     species TEXT NOT NULL,
-//     gender TEXT NOT NULL,
-//     image TEXT NOT NULL
-// );
